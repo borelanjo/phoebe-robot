@@ -1,0 +1,25 @@
+plugins {
+    id "com.bnorm.robocode" version "0.1.1"
+}
+
+group 'com.borelanjo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+robocode {
+    robots {
+        register("Phoebe") {
+            classPath = "com.borelanjo.PhoebeBot"
+            version = "1.11"
+            description = "Isso não é um robô, é um cachorro"
+        }
+    }
+}
