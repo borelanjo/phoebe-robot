@@ -37,6 +37,7 @@ public class BehaviorClient {
         if (shouldSwitch()) {
             currentBehavior = currentBehavior + 1 < strategies.size() ? currentBehavior + 1 : 0;
             this.context.setStrategy(strategies.get(currentBehavior));
+            shuffle(this.strategies);
         }
 
     }
