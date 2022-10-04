@@ -21,7 +21,7 @@ public class PhoebeBot extends AdvancedRobot {
     public void run() {
         colorConfigurator.configure();
         while (true) {
-            client.switchBehavior();
+            client.drawStrategy();
             client.getStrategy().run();
         }
     }

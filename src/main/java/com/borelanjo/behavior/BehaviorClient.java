@@ -33,7 +33,7 @@ public class BehaviorClient {
         return context.getStrategy();
     }
 
-    public void switchBehavior() {
+    public void drawStrategy() {
         if (shouldSwitch()) {
             currentBehavior = currentBehavior + 1 < strategies.size() ? currentBehavior + 1 : 0;
             this.context.setStrategy(strategies.get(currentBehavior));
