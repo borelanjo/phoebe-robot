@@ -1,4 +1,4 @@
-package com.borelanjo.behavior;
+package com.borelanjo.behavior.strategy;
 
 import robocode.AdvancedRobot;
 import robocode.HitRobotEvent;
@@ -7,11 +7,11 @@ import robocode.WinEvent;
 
 import java.awt.*;
 
-public class SpinBehavior implements Behavior {
+public class SpinStrategy implements Strategy {
 
     private final AdvancedRobot robot;
 
-    public SpinBehavior(AdvancedRobot robot) {
+    public SpinStrategy(AdvancedRobot robot) {
         this.robot = robot;
     }
 

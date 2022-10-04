@@ -1,4 +1,4 @@
-package com.borelanjo.behavior;
+package com.borelanjo.behavior.strategy;
 
 import robocode.AdvancedRobot;
 import robocode.HitRobotEvent;
@@ -9,7 +9,7 @@ import java.awt.*;
 
 import static robocode.util.Utils.normalRelativeAngleDegrees;
 
-public class TrackerBehavior implements Behavior {
+public class TrackerStrategy implements Strategy {
 
     private final AdvancedRobot robot;
 
@@ -20,7 +20,7 @@ public class TrackerBehavior implements Behavior {
 
     private String trackName; // Name of the robot we're currently tracking
 
-    public TrackerBehavior(AdvancedRobot robot) {
+    public TrackerStrategy(AdvancedRobot robot) {
         this.robot = robot;
         this.trackName = null; // Initialize to not tracking anyone
         this.gunTurnAmt = 10; // Initialize gunTurn to 10
