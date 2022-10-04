@@ -1,4 +1,4 @@
-package com.borelanjo.behavior;
+package com.borelanjo.behavior.strategy;
 
 import robocode.AdvancedRobot;
 import robocode.HitRobotEvent;
@@ -9,11 +9,11 @@ import java.awt.*;
 
 import static robocode.util.Utils.normalRelativeAngleDegrees;
 
-public class TrackFireBehavior implements Behavior {
+public class TrackFireStrategy implements Strategy {
 
     private final AdvancedRobot robot;
 
-    public TrackFireBehavior(AdvancedRobot robot) {
+    public TrackFireStrategy(AdvancedRobot robot) {
         this.robot = robot;
     }
 

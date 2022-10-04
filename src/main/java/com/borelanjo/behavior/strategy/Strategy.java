@@ -1,10 +1,10 @@
-package com.borelanjo.behavior;
+package com.borelanjo.behavior.strategy;
 
 import robocode.HitRobotEvent;
 import robocode.ScannedRobotEvent;
 import robocode.WinEvent;
 
-public interface Behavior {
+public interface Strategy {
 
     void run();
 
